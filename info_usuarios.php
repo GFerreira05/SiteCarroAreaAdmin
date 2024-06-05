@@ -272,7 +272,7 @@ $where = "";
                                 <td>{$linha['adm']}</td>
                                 <td>
                                     <a href='info_usuario_editar.php?id={$linha['id_login']}' style='text-decoration:none'>✏️</a>
-                                    <a href='{$_SERVER['PHP_SELF']}?id={$linha['id_login']}' class='btn btn-danger btn-sm' onclick='return confirm(\"Tem certeza que deseja excluir este carro?\")'>Excluir</a>
+                                    <a href='{$_SERVER['PHP_SELF']}?id={$linha['id_login']}' class='btn btn-danger btn-sm' onclick='return confirm(\"Tem certeza que deseja excluir este usuário?\")'>Excluir</a>
                                 </td>
                               </tr>";
                     }
