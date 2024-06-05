@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leilão</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <h2 class="text-danger">JGL MENU</h2>
+            <li><a href="#">Carros disponíveis para leilão</a></li>
+            <li><a href="#">Seminovos</a></li>
+            <li><a href="#">Importados</a></li>
+            <li><a href="#">Ce quer dar, ce fala</a></li>
+        </ul>
+    </div>
+    
+    <header>
+        <div id="menu-toggle" class="d-flex align-items-center" style="cursor: pointer;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </div>
+
+        <img src="imagens/JGL.png" alt="" align="center" width="100" height="90">
+        <h1 class="title_frontpage">JGL Automotivos</h1>
+        
+    </header>
+
+
+    <nav>
+        <a class="nav_bar" href="index1.html">Home</a>
+        <a class="nav_bar" href="quem-somos.html">Quem somos</a>
+        <a class="nav_bar" href="contato.html">Contato</a>
+
+
+    <div class="car-container">
+        <div class="car-item">
+            <img class="car-image" src="imagens/Fiat palio 2006.jpg" alt="Fiat Palio 2006" width="200">
+            <div class="car-info">
+                <h2 class="car-title">Fiat Palio 2006</h2>
+                <p class="car-price">Preço Base: R$ 8.000,00</p>
+                <input id="lanceInput" type="number" placeholder="Dê seu lance" min="8000" onkeydown="handleKeyPress(event)">
+                <p id="errorText" class="error-text">O valor do lance está muito baixo</p>
+            </div>
+        </div>
+
+        <div class="car-item">
+            <img class="car-image" src="imagens/Ranger FX4 Ford.jpg" alt="Ranger FX4 Ford" width="200">
+            <div class="car-info">
+                <h2 class="car-title">Ranger FX4</h2>
+                <p class="car-price">Preço: R$ 8.000,00</p>
+                <select>
+                    <option>1x R$ 8.000,00</option>
+                    <option>2x R$ 4.000,00</option>
+                    <option>3x R$ 2.666,66</option>
+                    <option>4x R$ 2.000,00</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p style="text-align:center;">Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Ao clicar no menu-toggle
+        $('#menu-toggle').click(function () {
+            $('#sidebar').toggleClass('active'); // Ativa/desativa a classe active no sidebar
+        });
+
+         // Fechar o menu quando clicar fora dele
+         $(document).mouseup(function (e) {
+            var container = $("#sidebar");
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
+                container.removeClass('active');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

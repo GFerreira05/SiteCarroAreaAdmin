@@ -1,0 +1,34 @@
+CREATE DATABASE loja;
+
+USE loja;
+
+
+CREATE TABLE `estado` (
+  `sigla_estado` varchar(2) NOT NULL,
+  `nome_estado` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`sigla_estado`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+CREATE TABLE `llogin` (
+  `id_login` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(50) DEFAULT NULL,
+  `senha` varchar(50) DEFAULT NULL,
+  `adm` tinyint(1) DEFAULT NULL,
+  `nome` varchar(50) DEFAULT NULL,
+  `sobrenome` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id_login`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+CREATE TABLE `carro` (
+  `id_carros` int(11) NOT NULL AUTO_INCREMENT,
+  `nome_carros` varchar(50) DEFAULT NULL,
+  `marca` varchar(30) DEFAULT NULL,
+  `cor` varchar(14) DEFAULT NULL,
+  `cidade_carros` varchar(50) DEFAULT NULL,
+  `sigla_estado` varchar(2) DEFAULT NULL,
+  `ano_carros` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id_carros`),
+  KEY `sigla_estado` (`sigla_estado`),
+  CONSTRAINT `carro_ibfk_1` FOREIGN KEY (`sigla_estado`) REFERENCES `estado` (`sigla_estado`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+

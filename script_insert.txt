@@ -1,0 +1,32 @@
+INSERT INTO `estado` (`sigla_estado`, `nome_estado`) VALUES
+('AC', 'Acre'),
+('AL', 'Alagoas'),
+('AP', 'Amapá'),
+('AM', 'Amazonas'),
+('BA', 'Bahia'),
+('CE', 'Ceará'),
+('DF', 'Distrito Federal'),
+('ES', 'Espírito Santo'),
+('GO', 'Goiás'),
+('MA', 'Maranhão'),
+('MT', 'Mato Grosso'),
+('MS', 'Mato Grosso do Sul'),
+('MG', 'Minas Gerais'),
+('PA', 'Pará'),
+('PB', 'Paraíba'),
+('PR', 'Paraná'),
+('PE', 'Pernambuco'),
+('PI', 'Piauí'),
+('RJ', 'Rio de Janeiro'),
+('RN', 'Rio Grande do Norte'),
+('RS', 'Rio Grande do Sul'),
+('RO', 'Rondônia'),
+('RR', 'Roraima'),
+('SC', 'Santa Catarina'),
+('SP', 'São Paulo'),
+('SE', 'Sergipe'),
+('TO', 'Tocantins');
+
+INSERT INTO `llogin` (`id_login`, `email`, `senha`, `adm`, `nome`, `sobrenome`) VALUES (NULL, 'mariaalves@gmail.com', '654', '0', 'Maria', 'Alves')
+
+INSERT INTO `carro` (`id_carros`, `nome_carros`, `marca`, `cor`, `cidade_carros`, `sigla_estado`, `ano_carros`) VALUES (NULL, 'Camaro', 'Chevrolet', 'Preto', 'Bauru', 'SP', '2009'), (NULL, 'Bugatti Chiron', 'Bugatti', 'Preto', 'Dois Córregos', 'SP', '2024'), (NULL, 'Ranger ', 'Ford', 'Branco', 'Campinas', 'SP', '2024'), (NULL, 'Fiat 500', 'Fiat', 'Cinza', 'Jáu', 'SP', '2024'), (NULL, 'Gol', 'Volkswagen', 'Vermelho', 'São Carlos', 'SP', '2024'), (NULL, 'Peugeot 208', 'Peugeot', 'Azul', 'Botucatu', 'SP', '2024'), (NULL, 'Supra', 'Toyota', 'Vermelho', 'Londrina', 'PR', '2024'), (NULL, 'Audi R8', 'Audi', 'Azul', 'Colombo', 'PR', '2024')

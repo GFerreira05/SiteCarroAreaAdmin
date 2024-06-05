@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+}
+
+.title_frontpage {
+    font-family: "Play", sans-serif;
+}
+
+.title_frontpage:hover {
+    font-family: "Play", sans-serif;
+    color: grey;
+    cursor: pointer;
+}
+
+header {
+    background-color: #333;
+    color: red;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.logo {
+    margin-left: -90px;
+    margin-top: -20px;
+}
+
+.logo2{
+    margin-right: 90px;
+    margin-top: -50px;
+    margin-left: 50px;
+    
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Esconde o menu inicialmente */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s ease-in-out; /* Adiciona transição suave */
+    z-index: 999;
+    font-family: "Play", sans-serif;
+}
+
+.text-danger{
+    text-align: center;
+}
+
+.login-link {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 3px solid black; /* Tipo de borda: largura, estilo e cor */
+    border-radius: 15px; /* Valor do raio para bordas arredondadas */
+    padding: 5px; /* Espaçamento interno para afastar o texto da borda */
+    display: inline-block; 
+    background-color: #941111;
+    color: #fff; /* Cor do texto */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+}
+
+.login-link a {
+    font-family: "Play", sans-serif;
+    color: inherit; /* Cor do texto herdada da classe pai */
+    text-decoration: none; /* Remove sublinhado */
+    padding: 10px 20px;
+}
+
+.login-link:hover {
+    background-color: #535050; /* Cor alterada ao passar o mouse */
+}
+
+.login-link:hover a {
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+.login-link a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar.active {
+    left: 0; /* Mostra o menu quando ativo */
+}
+
+.car-container {
+    width:100%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.car-item {
+    width: calc(20% - 10px); /* Define a largura de cada carro */
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Cor de fundo para destacar os carros */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    width: 400px; /* Largura do bloco */
+    height: 200px; /* Altura do bloco */
+    
+}
+
+.car-image {
+    float: left;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem para preencher o contêiner mantendo sua proporção */
+    transition: transform 0.3s ease-in-out;
+}
+
+.car-item:hover .car-image {
+    transform: scale(1.1); /* Aumenta a imagem em 10% quando o mouse passar por cima */
+}
+
+
+.car-info {
+    overflow: hidden;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    color: white;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.car-item:hover .car-info {
+    transform: translateY(0); /* Move as informações para cima quando o mouse passar por cima */
+}
+
+.car-title {
+    margin-top: 0;
+    color: white;
+}
+
+.car-price {
+    color: white;
+    margin-bottom: 10px;
+}
+
+select {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.error-text {
+    color: red;
+    display: none; /* Inicialmente, ocultar o texto de erro */
+}
+
+.nav_bar2 {
+    display: flex;
+    margin-left: 900px;
+    margin-top: -70px;
+    position: relative;
+    top: -16px; /* Deslocamento para cima */
+}
+
+.nav_bar2 a {
+    margin-right: 80px; /* Adiciona espaçamento entre os links */
+}
+
+.nav_bar {
+    font-family: "Play", sans-serif;
+    color: red;
+    text-align: right;
+    font-size: larger;
+    
+}
+
+.nav_bar:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.switch-specs {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.switch-specs:hover {
+    background-color: #d0d0d0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adicione esta linha se desejar algum espaço acima do botão */
+}
+
+#botao_comprar {
+    padding: 10px 20px;
+    font-size: 30px;
+}
