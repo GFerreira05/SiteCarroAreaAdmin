@@ -9,3 +9,15 @@ LUCAS RYANDRO CORREIA 		      R.A: 010623059
 GUILHERME FERREIRA DA COSTA 	  R.A: 010623049
 
 JOÃO GABRIEL GODOY PRADO 	      R.A: 010623043
+
+# Linguagens utilizadas
+
+- CSS
+ 
+- HTML
+ 
+- PHP
+ 
+- SCSS
+ 
+- JavaScript
